@@ -1,8 +1,18 @@
-const productos= [ "Camisetas", "Shorts", "Botines", "Medias", "Zapatillas"];
+//modificacion de elementos 
+let modificacion = document.getElementById("modificoJs");
 
-let pedirProducto= prompt("Ingrese un producto para agregar como primer elemento a la lista. A continuación se le mostrara el tamaño de la lista y tambien se eliminará el último producto de la lista. Puede ver todos los productos en la consola. ");
-productos.unshift(pedirProducto);
-productos.pop();
-console.log(productos);
-alert(productos.length);
+modificacion.innerHTML= "<h1> Este título se modificó en JS</h1>";
 
+//creacion
+
+let subtitulo = document.createElement("div");
+
+subtitulo.innerHTML = "<h2>Subtítulo creado en JS</h2>"
+
+document.body.append(subtitulo);
+
+//eliminar elemento
+
+let eliminacion = document.getElementById("elementoAEliminar");
+
+eliminacion.remove();
